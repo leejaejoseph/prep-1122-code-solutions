@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>CSS Layout Classes</title>
+  <link rel="stylesheet" href="reset.css">
+  <style>
+    /* stylelint-disable block-no-empty */
+    body {
+      font-family: sans-serif;
+    }
+
+    h1 {
+      text-align: center;
+    }
+
+    .container {
+      max-width: 992px;
+      margin: auto;
+    }
+
+    .row {
+      width: 100%;
+      display: flex;
+    }
+
+    .column {
+      flex-basis: calc(100% / 3);
+      padding-left: 8px;
+      padding-right: 8px;
+    }
+
+    img{
+      width: 100%;
+    }
+  </style>
+</head>
+<body>
+  <!-- Complete the HTML here -->
+  <div class="container">
+    <div class="title">
+      <h1>Favorite Movies</h1>
+    </div>
+    <div class="row">
+      <div class="column">
+        <img src="https://m.media-amazon.com/images/M/MV5BMTMzODU0NTkxMF5BMl5BanBnXkFtZTcwMjQ4MzMzMw@@._V1_.jpg" alt="Ratatouille movie poster">
+        <h3>Ratatouille</h3>
+        <p>
+          A children's movie focused on explaining that while not everyone
+          can be a great cook, a great cook can come from anywhere as depicted
+          through the lens of a cooking rat named Remy.
+        </p>
+      </div>
+      <div class="column">
+        <img src="https://m.media-amazon.com/images/M/MV5BMjExMTg5OTU0NF5BMl5BanBnXkFtZTcwMjMxMzMzMw@@._V1_.jpg" alt="Wall-e movie poster">
+        <h3>Wall-e</h3>
+        <p>
+          A fantastical animated film from 2008 depicting the filth Earth becomes
+          in the future as humans chase for more wealth and materials ultimately
+          trashing the planet and letting earth rot.
+        </p>
+      </div>
+      <div class="column">
+        <img src="https://m.media-amazon.com/images/M/MV5BNjEzNTk2OTEwNF5BMl5BanBnXkFtZTgwNzExMTg0NjE@._V1_.jpg" alt="Burnt movie poster">
+        <h3>Burnt</h3>
+        <p>
+          A movie depicting a more realistic lens of a top chef in paris in
+          pursuit for michelin stars. We follow Adam Jones who is in pursuit
+          to be the greatest and see the effort, betrayal, and anger acted by
+          Bradley Cooper.
+        </p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
